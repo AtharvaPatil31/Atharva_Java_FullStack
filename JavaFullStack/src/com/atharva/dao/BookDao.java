@@ -13,6 +13,8 @@ public interface BookDao {
     List<Buch> list();
 
     boolean delete(int isbn);
-    
+
     List<Buch> findByPrice(double min, double max);
+
+    List<Buch> listOrderByTitle();
 }
