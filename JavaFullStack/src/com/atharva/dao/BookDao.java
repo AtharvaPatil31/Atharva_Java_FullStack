@@ -1,6 +1,7 @@
 package com.atharva.dao;
 
 import java.util.List;
+import java.util.Optional;
 
 import com.atharva.Pojo.Buch;
 
@@ -8,7 +9,7 @@ public interface BookDao {
 
     boolean save(Buch b);
 
-    Buch find(int isbn);
+    Optional<Buch> find(int isbn);
 
     List<Buch> list();
 
